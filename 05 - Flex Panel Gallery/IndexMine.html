@@ -47,16 +47,14 @@
       background-position: center;
       flex: 1;
       justify-content: center;
-      align-items: center;
       display: flex;
       flex-direction: column;
     }
-
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+    .panel1 { background-image:url(https://images.unsplash.com/photo-1749482843703-3895960e7d63?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+    .panel2 { background-image:url(https://images.unsplash.com/photo-1719475161633-0b7cfcac8af2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
     .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+    .panel4 { background-image:url(https://images.unsplash.com/photo-1749449456588-ef30946060ca?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8); }
+    .panel5 { background-image:url(https://images.unsplash.com/photo-1734545265434-0e9200e8ae61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8); }
 
     /* Flex Children */
     .panel > * {
@@ -66,12 +64,12 @@
       flex: 1 0 auto;
       display: flex;
       justify-content: center;
-      justify-items: center;
+      align-items: center;
     }
 
     .panel > *:first-child{transform: translateY(-100%);}
     .panel.open-active > *:first-child{transform: translateY(0);}
-    .panel > *:last-child{transform: translateY(-100%);}
+    .panel > *:last-child{transform: translateY(100%);}
     .panel.open-active > *:last-child{transform: translateY(0%);}
 
     .panel p {
@@ -90,6 +88,11 @@
       flex: 5;
     }
 
+        @media only screen and (max-width: 600px) {
+      .panel p {
+        font-size: 1em;
+      }
+    }
   </style>
 
 
@@ -104,7 +107,7 @@
       <p>Take</p>
       <p>Receive</p>
     </div>
-    <div class="panel panel3 open">
+    <div class="panel panel3">
       <p>Experience</p>
       <p>It</p>
       <p>Today</p>
