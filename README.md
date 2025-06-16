@@ -1,2 +1,2 @@
 I made this course to repeat my js knowladge.
-If you want to see mine files they are in the project master files but they have Mine syntax in their last word
+If you want to see my files they are in the project master files but they have Mine syntax in their last word
